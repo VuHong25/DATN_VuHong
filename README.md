@@ -112,7 +112,7 @@ pytest tests/test_cart.py::TestCartAccessRight::test_view_cart_not_logged_in
 
 ### 2. Tìm kiếm sản phẩm 
 
-### 3. Xem danh mục sản phẩm
+### 3. Thêm sản phẩm vào giỏ
 
 ### 4. Xem chi tiết sản phẩm  
 
