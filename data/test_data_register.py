@@ -77,24 +77,24 @@ SDT_CASES = [
         "SĐT không bắt đầu bằng 0 → không hợp lệ"
     ),
     (
-        "TC-20",
-        "012345678",
-        "Đăng ký không thành công. Thử lại sau !",
-        "span",
+        "TC-20", 
+        "012345678", 
+        "Đăng ký không thành công. Thử lại sau !", 
+        "span", 
         "SĐT 9 ký tự (< 10) → không hợp lệ"
     ),
-    (
-        "TC-21",
-        "0123456789",
-        "success_or_none",
-        "none",
+    ( 
+        "TC-21", 
+        "0123456789", 
+        "success_or_none", 
+        "none", 
         "SĐT hợp lệ 10 ký tự bắt đầu 0 → cho phép"
     ),
-    (
-        "TC-22",
-        "01234567899",
-        "Đăng ký không thành công. Thử lại sau !",
-        "span",
+    ( 
+        "TC-22", 
+        "01234567899", 
+        "Đăng ký không thành công. Thử lại sau !", 
+        "span", 
         "SĐT 11 ký tự (> 10) → không hợp lệ"
     ),
 ]

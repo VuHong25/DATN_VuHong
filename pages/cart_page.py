@@ -246,7 +246,7 @@ class CartPage(BasePage):
 
     def get_quantity_of(self, index=0):
         inputs = self.driver.find_elements(*self.INPUTS_QUANTITY)
-        return int(inputs[index].get_attribute("value"))
+        return (inputs[index].get_attribute("value"))
 
     def get_swal_text(self):
         return self.get_text(self.MSG_SWAL_TEXT)
@@ -335,14 +335,23 @@ class CartPage(BasePage):
     def is_out_of_stock_visible(self):
         return self.check_visible(self.MSG_OUT_OF_STOCK)
 
+    # def is_confirm_popup_visible(self):
+    #     try:
+    #         self.driver.switch_to.alert
+    #         return True
+    #     except NoAlertPresentException:
+    #         pass
+    #     return self.check_visible(self.MSG_POPUP_CONFIRM)
     def is_confirm_popup_visible(self):
         try:
-            self.driver.switch_to.alert
+            alert = self.driver.switch_to.alert
+            _ = alert.text
             return True
         except NoAlertPresentException:
             pass
-        return self.check_visible(self.MSG_POPUP_CONFIRM)
 
+        return self.check_visible(self.MSG_POPUP_CONFIRM)
+        
     def is_btn_update_visible(self):
         return self.check_visible(self.BTN_UPDATE_CART)
 

@@ -87,13 +87,15 @@ pip install webdriver-manager
 # Chạy tất cả
 # Công thức chung: pytest file::class::testcase -v
 cd tests
+
+# Chạy toàn bộ
 pytest -v
 
 # Chỉ chạy 1 module
-pytest test_login.py -v
+pytest tests/test_register.py -v
 
 # Chạy 1 test case cụ thể
-pytest test_login.py::TestLogin::test_login_success -v
+pytest tests/test_register.py::TestValidationHoTen::test_ho_ten -v
 
 # Chạy và xuất báo cáo HTML
 pytest -v --html=reports.html

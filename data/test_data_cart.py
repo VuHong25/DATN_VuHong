@@ -64,7 +64,7 @@ UPDATE_CART_DATA = [
         "tc15_float",
         "1.5",
         "reject",
-        "TC-15: Nhập sl thực (1.5) → tự chuyển về số nguyên"
+        "TC-15: Nhập sl thực (1.5) → chuyển về lưu số nguyên"
     ),
     (
         "tc16_text",

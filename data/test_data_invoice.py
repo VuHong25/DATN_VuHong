@@ -17,7 +17,7 @@ INVOICE_ACTIVE = {
     #   row_index=1 
     #   row_index=10 
     #   row_index=12 
-    "row_index"   : 26,   
+    "row_index"   : 29,   
 }
 
 INVOICE_CANCELLED = {
